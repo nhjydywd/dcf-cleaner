@@ -4,7 +4,7 @@
 
 一个基于 Flutter Desktop 的文件清理软件。
 
-版本：1.0.0（macOS）
+版本：1.0.0
 
 ![DCF Cleaner 截图](images/main.png)
 

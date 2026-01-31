@@ -4,7 +4,7 @@
 
 DCF Cleaner is a file cleanup app (Flutter Desktop).
 
-Version: 1.0.0 (macOS)
+Version: 1.0.0 
 
 ![DCF Cleaner Screenshot](images/main.png)
 
