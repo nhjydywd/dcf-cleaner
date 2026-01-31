@@ -1,0 +1,206 @@
+{
+  "@@locale": "zh",
+  "appTitle": "DCF Cleaner",
+  "homeTitle": "首页",
+  "chooseFolder": "选择文件夹",
+  "reselectFolder": "重新选择",
+  "selectedFolderLabel": "已选择文件夹：",
+  "currentDirectoryTitle": "当前根目录：{path}",
+  "@currentDirectoryTitle": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "chooseFolderNotSupported": "当前平台不支持选择文件夹。",
+  "chooseFolderCanceled": "已取消。",
+  "chooseFolderFailed": "打开文件夹选择器失败。",
+  "chooseFolderTimedOut": "打开文件夹选择器超时。",
+  "detailTitle": "详情",
+  "detailLoadFailed": "读取文件详情失败。",
+  "detailName": "名称",
+  "detailPath": "路径",
+  "detailType": "类型",
+  "detailSize": "占用空间",
+  "detailFolderSizeCalculated": "文件夹大小（计算值）",
+  "detailModified": "修改时间",
+  "detailAccessed": "访问时间",
+  "detailChanged": "变更时间",
+  "detailTypeFile": "文件",
+  "detailTypeDirectory": "文件夹",
+  "detailTypeLink": "链接",
+  "detailTypeOther": "其他",
+  "aiSuggestButton": "AI建议",
+  "aiSuggestLoading": "生成中...",
+  "aiSuggestFailedTitle": "AI建议失败",
+  "aiSuggestErrorConfigIncomplete": "AI配置未填写完整。",
+  "aiSuggestErrorBadUrl": "Base URL 不合法。",
+  "aiSuggestErrorTimeout": "请求超时。",
+  "aiSuggestErrorConnectFailed": "连接失败。",
+  "aiSuggestErrorHttpUnknown": "请求失败（HTTP错误）。",
+  "aiSuggestErrorHttp": "请求失败（HTTP {code}）。",
+  "@aiSuggestErrorHttp": {
+    "placeholders": {
+      "code": {
+        "type": "int"
+      }
+    }
+  },
+  "aiSuggestErrorInternal": "请求失败（软件内部错误）。",
+  "aiSuggestErrorUnknown": "请求失败。",
+  "aiSuggestSystemPrompt": "你是一名资深文件清理专家。请基于用户提供的文件/文件夹信息进行分析，重点判断是否建议删除、以及删除可能带来的严重后果。\n\n输出要求：\n- 纯文本输出（不要 Markdown，不要加粗，不要列表符号）。\n- 必须严格使用以下三段标记（标记必须原样输出，顺序不变），并在标记后写内容：\n[[DCF_SUMMARY]]\n(一段简要说明)\n[[DCF_ADVICE]]\n(一段删除建议)\n[[DCF_END]]\n- 只允许输出上述标记和对应内容，不要输出任何其它内容。\n- 总字数 200 字以内。",
+  "aiSuggestUnknown": "未知",
+  "aiSuggestUserPromptFile": "文件信息：\n路径：{path}\n名称：{name}\n总大小（磁盘分配）：{sizeText}（{sizeBytes}B）\n修改时间：{modified}\n访问时间：{accessed}\n变更时间：{changed}",
+  "@aiSuggestUserPromptFile": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "sizeText": {
+        "type": "String"
+      },
+      "sizeBytes": {
+        "type": "int"
+      },
+      "modified": {
+        "type": "String"
+      },
+      "accessed": {
+        "type": "String"
+      },
+      "changed": {
+        "type": "String"
+      }
+    }
+  },
+  "aiSuggestUserPromptFolder": "文件夹信息：\n路径：{path}\n名称：{name}\n总大小（磁盘分配）：{sizeText}（{sizeBytes}B）\n修改时间：{modified}\n访问时间：{accessed}\n变更时间：{changed}\n\n前10个最大的子项（仅直系，不递归）：\n{top10}\n\n说明：若子项名称前带\"*\"，表示它可能是硬链接重复项，空间可能已在其它位置计入。",
+  "aiSuggestParsedSummaryLabel": "简介",
+  "aiSuggestParsedAdviceLabel": "建议",
+  "aiSuggestDisclaimer": "该建议为AI生成, 与本软件无关. 您是唯一责任人, 请谨慎操作",
+  "aiSuggestTop10Empty": "- （空）",
+  "@aiSuggestUserPromptFolder": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "sizeText": {
+        "type": "String"
+      },
+      "sizeBytes": {
+        "type": "int"
+      },
+      "modified": {
+        "type": "String"
+      },
+      "accessed": {
+        "type": "String"
+      },
+      "changed": {
+        "type": "String"
+      },
+      "top10": {
+        "type": "String"
+      }
+    }
+  },
+  "aiConfigTitle": "AI配置",
+  "aiConfigBaseUrlLabel": "Base URL",
+  "aiConfigBaseUrlHint": "例如 https://api.openai.com/v1",
+  "aiConfigModelLabel": "模型",
+  "aiConfigModelHint": "例如 gpt-4o-mini",
+  "aiConfigApiKeyLabel": "API Key",
+  "aiConfigValidating": "验证中",
+  "aiConfigValidateFailedTitle": "验证失败",
+  "aiConfigSuccessTitle": "配置成功!",
+  "aiConfigErrorIncomplete": "配置未填写完整。",
+  "aiConfigErrorBadUrl": "Base URL 不合法。",
+  "aiConfigErrorTimeout": "请求超时。",
+  "aiConfigErrorConnectFailed": "连接失败。",
+  "aiConfigErrorHttpUnknown": "请求失败（HTTP错误）。",
+  "aiConfigErrorHttp": "请求失败（HTTP {code}）。",
+  "@aiConfigErrorHttp": {
+    "placeholders": {
+      "code": {
+        "type": "int"
+      }
+    }
+  },
+  "aiConfigErrorInternal": "验证失败（软件内部错误）。",
+  "aiConfigErrorUnknown": "验证失败。",
+  "menuOpenInFileManager": "在文件管理器中打开",
+  "menuDelete": "删除",
+  "menuPermanentDelete": "彻底删除",
+  "commonOk": "确定",
+  "commonCancel": "取消",
+  "commonConfirm": "确定",
+  "deleteFailed": "删除失败。",
+  "permanentDeleteFailed": "彻底删除失败。",
+  "binNameMac": "废纸篓",
+  "binNameWindows": "回收站",
+  "deleteConfirmTitle": "确认删除？",
+  "deleteToBinConfirmPrimaryFile": "将“{name}”移到{bin}。",
+  "@deleteToBinConfirmPrimaryFile": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "bin": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteToBinConfirmPrimaryFolder": "将文件夹“{name}”移到{bin}。",
+  "@deleteToBinConfirmPrimaryFolder": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "bin": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteToBinConfirmUndo": "您可以从{bin}中撤销删除。",
+  "@deleteToBinConfirmUndo": {
+    "placeholders": {
+      "bin": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteToBinConfirmReleaseSpace": "只有在您清空{bin}后，存储空间才会彻底被释放。",
+  "@deleteToBinConfirmReleaseSpace": {
+    "placeholders": {
+      "bin": {
+        "type": "String"
+      }
+    }
+  },
+  "permanentDeleteConfirmTitle": "确认彻底删除？",
+  "permanentDeleteConfirmMessageFile": "将彻底删除“{name}”。",
+  "@permanentDeleteConfirmMessageFile": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "permanentDeleteConfirmMessageFolder": "将彻底删除文件夹“{name}”及其所有内容。",
+  "@permanentDeleteConfirmMessageFolder": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "permanentDeleteIrreversibleWarning": "该操作无法撤销!",
+  "counterPrompt": "你已经点击按钮这么多次：",
+  "incrementTooltip": "加一"
+}
