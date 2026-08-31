@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:dcf_cleaner/l10n/app_localizations.dart';
 
 import 'fs/fs_item.dart';
 import 'pages/empty_page.dart';

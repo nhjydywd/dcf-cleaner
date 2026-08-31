@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:dcf_cleaner/l10n/app_localizations.dart';
 
 import '../fs/fs_actions.dart';
 import '../fs/fs_item.dart';
